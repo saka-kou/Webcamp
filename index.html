@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script defer src="css/index.css"></script>
-
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Opti&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@200&family=Rampart+One&family=Rubik+80s+Fade&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
-
+    <header class="header">
+        <input type="text" placeholder="けんさく" id="input-serch">
+        <button id="serch-icon"><img src="images/serch.png" alt="虫眼鏡"></button>
+        <button id=""><img src="images/import.png" alt="保存マーク"></button>
+    </header>
+    <div id="bg-heart"></div>
+    <main class="main">
+        <div class="userInfo"></div>
+    </main>
+    <footer class="footer">
+        <button id="edit">
+            <p>編集</p>
+        </button>
+        <ul class="list">
+            <li class="li"><button><img src="images/footerui.png" alt="前のメニュー"></button></li>
+            <li class="li"><button class="footerbg"><img src="images/footerback.png" alt="前の画像"></button></li>
+            <li class="li"><button class="footerbg"><img src="images/footerkeep.png" alt="星"></button></li>
+            <li class="li"><button class="footerbg"><img src="images/footernext.png" alt="次の画像"></button></li>
+            <li class="li"><button><img src="images/footerui.png" alt="次のメニュー" id="footerNext"></button></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

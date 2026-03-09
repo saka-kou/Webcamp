@@ -1,0 +1,107 @@
+@import url(color.css);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg-color);
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../images/bg-heart.png);
+    background-position-y: 350px;
+    background-position-x: -30px;
+}
+
+#bg-heart {
+    position: absolute;
+    width: 100%;
+    left: -20px;
+}
+
+.header {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    margin: 48px 32px 50px 16px;
+
+    #input-serch {
+        width: 225px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding-left: 16px;
+        font-size: 1.6rem;
+        color: #fff;
+        margin-right: 15px
+    }
+
+    #serch-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        background-color: var(--ui-color);
+        border: 1px solid #fff;
+        border-radius: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 22px;
+
+    .userInfo {
+        width: 360px;
+        height: 380px;
+        background-color: #d9d9d9;
+
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #edit {
+        width: 80px;
+        height: 48px;
+        font-size: 1.6rem;
+        color: #fff;
+        margin-bottom: 16px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background-color: var(--ui-color);
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        list-style-type: none;
+
+        .footerbg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+
+            background-color: var(--ui-color);
+            border-radius: 100%;
+        }
+
+        #footerNext {
+            transform: scale(-1, 1);
+        }
+    }
+}
