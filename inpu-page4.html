@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/input-page4.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Opti&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@200&family=Rampart+One&family=Rubik+80s+Fade&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>じぶんのプロフィールをつくろー！</h1>
+        <span id="progressWrap">
+            <span id="progress">
+                <span id="star"><img src="images/star.png" alt="星"></span>
+            </span>
+        </span>
+    </header>
+    <main class="main">
+        <p class="title">恋愛</p>
+        <p class="title">好きな人いる？</p>
+        <div class="radioWrap">
+            <input type="radio" id="yes1" name="choice1" class="input" value="yes">
+            <label for="yes1">YES</label>
+            <input type="radio" id="no1" name="choice1" class="input" value="no">
+            <label for="no1">NO</label>
+        </div>
+        <p class="title">告白されたことがある？</p>
+        <div class="radioWrap">
+            <input type="radio" id="yes2" name="choice2" class="input" value="yes">
+            <label for="yes2">YES</label>
+            <input type="radio" id="no2" name="choice2" class="input" value="no">
+            <label for="no2">NO</label>
+        </div>
+        <p class="title">告白したことがある？</p>
+        <div class="radioWrap">
+            <input type="radio" id="yes3" name="choice3" class="input" value="yes">
+            <label for="yes3">YES</label>
+            <input type="radio" id="no3" name="choice3" class="input" value="no">
+            <label for="no3">NO</label>
+        </div>
+        <p class="title">初恋はいつ？</p>
+        <div class="content">
+            <input class="text-input" type="number">
+            <p class="title">さい</p>
+        </div>
+        <p class="title">付き合った人は何人？</p>
+        <div class="content">
+            <input class="text-input" type="number">
+            <p class="title">人</p>
+        </div>
+        <p class="title">何歳で結婚したい？</p>
+        <div class="content">
+            <input class="text-input" type="number">
+            <p class="title">さい</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <button><img src="images/footerui.png" alt="戻るボタン" id="backBtn"></button>
+        <button><img src="images/footerui.png" alt="次へボタン" id="nextBtn"></button>
+    </footer>
+</body>

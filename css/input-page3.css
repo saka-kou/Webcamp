@@ -1,0 +1,85 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../images/bg-heart.png);
+    background-position-y: 400px;
+    background-position-x: -30px;
+    margin: 0 30px;
+}
+
+.header {
+    width: 100%;
+    margin: 50px 0;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #progressWrap {
+        position: relative;
+        display: block;
+        height: 25px;
+        width: 100%;
+        border: 12.5px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+
+        #progress {
+            position: absolute;
+            left: -12.5px;
+            top: -12.5px;
+            width: 60%;
+            height: 25px;
+            display: block;
+            background-color: var(--accent-color);
+            border-radius: 20px;
+
+            #star {
+                position: absolute;
+                top: 6px;
+                left: 87%;
+            }
+        }
+    }
+}
+
+.main {
+    .title {
+        font-size: 1.6rem;
+        margin-bottom: 11px;
+
+        &:nth-child(1) {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .input {
+        height: 43px;
+        border: 1px solid #fff;
+        font-size: 1.6rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding: 1.4rem;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    #nextBtn {
+        transform: scale(-1, 1);
+    }
+}
