@@ -34,7 +34,7 @@ body {
             position: absolute;
             left: -12.5px;
             top: -12.5px;
-            width: 60%;
+            width: 108%;
             height: 25px;
             display: block;
             background-color: var(--accent-color);
@@ -43,7 +43,7 @@ body {
             #star {
                 position: absolute;
                 top: 6px;
-                left: 87%;
+                left: 93%;
             }
         }
     }
@@ -70,17 +70,25 @@ body {
         padding: 1.4rem;
         margin-bottom: 30px;
         margin-right: 10px;
+
+        &:last-child {
+            height: 180px;
+        }
     }
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
 
-    #nextBtn {
-        transform: scale(-1, 1);
+    #finishBtn {
+        width: 100px;
+        height: 48px;
+        background-color: var(--accent-color);
+        border: 1px solid #fff;
     }
 }

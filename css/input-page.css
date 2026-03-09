@@ -8,13 +8,45 @@ body {
     font-weight: 400;
     font-style: normal;
     background-image: url(../images/bg-heart.png);
-    background-position-y: 365px;
+    background-position-y: 425px;
     background-position-x: -30px;
     margin: 0 30px;
 }
 
 .header {
+    width: 100%;
     margin: 50px 0;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #progressWrap {
+        position: relative;
+        display: block;
+        height: 25px;
+        width: 100%;
+        border: 12.5px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+
+        #progress {
+            position: absolute;
+            left: -12.5px;
+            top: -12.5px;
+            width: 20%;
+            height: 25px;
+            display: block;
+            background-color: var(--accent-color);
+            border-radius: 20px;
+
+            #star {
+                position: absolute;
+                top: 6px;
+                left: 72%;
+            }
+        }
+    }
 }
 
 .main {
@@ -24,6 +56,7 @@ body {
     }
 
     .input {
+        width: 100%;
         height: 43px;
         border: 1px solid #fff;
         font-size: 1.6rem;
@@ -63,7 +96,7 @@ body {
     margin-top: 20px;
     margin-bottom: 50px;
 
-    button {
+    #nextBtn {
         transform: scale(-1, 1);
     }
 }

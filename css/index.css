@@ -27,7 +27,7 @@ body {
     align-items: center;
     margin: 48px 32px 50px 16px;
 
-    #input-serch {
+    #input-search {
         width: 225px;
         height: 40px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -35,18 +35,18 @@ body {
         border-radius: 20px;
         padding-left: 16px;
         font-size: 1.6rem;
-        color: #fff;
+        color: #000;
         margin-right: 15px
     }
 
-    #serch-icon {
+    #search-icon {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40px;
         height: 40px;
         margin-right: 20px;
-        background-color: var(--ui-color);
+        background-color: var(--accent-color);
         border: 1px solid #fff;
         border-radius: 100%;
     }
@@ -79,7 +79,7 @@ body {
         margin-bottom: 16px;
         border: 1px solid #fff;
         border-radius: 4px;
-        background-color: var(--ui-color);
+        background-color: var(--accent-color);
     }
 
     .list {
@@ -96,7 +96,7 @@ body {
             width: 48px;
             height: 48px;
 
-            background-color: var(--ui-color);
+            background-color: var(--accent-color);
             border-radius: 100%;
         }
 
