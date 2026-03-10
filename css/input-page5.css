@@ -86,9 +86,19 @@ body {
     margin-bottom: 50px;
 
     #finishBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100px;
         height: 48px;
         background-color: var(--accent-color);
         border: 1px solid #fff;
+        text-decoration: none;
+
+        p {
+            font-size: 1.6rem;
+            color: #fff;
+
+        }
     }
 }

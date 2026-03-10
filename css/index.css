@@ -61,7 +61,7 @@ body {
     .userInfo {
         width: 360px;
         height: 380px;
-        background-color: #d9d9d9;
+        background-color: rgba(255, 255, 255, 0.5);
 
     }
 }
@@ -95,9 +95,22 @@ body {
             align-items: center;
             width: 48px;
             height: 48px;
-
             background-color: var(--accent-color);
             border-radius: 100%;
+        }
+
+        #starWrap {
+            position: relative;
+            appearance: none;
+
+            &:checked {
+                filter: brightness(0) saturate(100%) invert(95%) sepia(88%) saturate(7490%) hue-rotate(338deg) brightness(114%) contrast(86%);
+            }
+
+            #star {
+                position: absolute;
+
+            }
         }
 
         #footerNext {
