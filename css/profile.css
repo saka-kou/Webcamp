@@ -1,0 +1,225 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../images/background_pure.webp);
+    background-size: auto;
+    background-position: center center;
+    /* background-position-x: -65px; */
+    margin: 0 12px;
+    /* padding-left: 40px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 16px;
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        #today {
+            margin-left: 4px;
+        }
+    }
+}
+
+
+.text-decoration {
+    -webkit-text-stroke: 0.05px #fff;
+    /* outline: 1px solid #fff; */
+}
+
+.main {
+    font-size: 1.2rem;
+    margin-top: 12px;
+
+    h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .profile {
+        background-color: var(--textBg-color);
+        padding: 8px 12px 12px 12px;
+        border-radius: 12px;
+
+        .profile-top {
+            .user-content {
+                border-bottom: 3px dotted #a1ede6;
+            }
+        }
+
+        .title {
+            margin-top: 4px;
+        }
+
+        .user-content {
+            font-size: 1.4rem;
+            margin-top: 4px;
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 4px;
+
+            .user-content {
+                font-size: 1.2rem;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 2px 4px;
+            }
+
+
+            .birthday {
+                .birthday-inner {
+                    display: flex;
+                    gap: 4px;
+                }
+            }
+
+            .blood {
+                .blood-inner {
+                    display: flex;
+                    gap: 4px;
+                }
+            }
+
+            .constellation {
+                /* display: flex; */
+
+                .constellation-inner {
+                    display: flex;
+                    gap: 4px;
+                }
+            }
+
+        }
+    }
+}
+
+.user-content {
+    font-size: 1.4rem;
+}
+
+.favorite {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        margin-top: 6px;
+    }
+
+    .user-content {
+        background-color: var(--textBg-color);
+        border-radius: 4px;
+        margin-left: 4px;
+        padding: 1px 2px;
+        width: 80px;
+    }
+}
+
+.bottom-content {
+    margin-top: 8px;
+    display: grid;
+    grid-template-areas:
+        "gridA gridB"
+        "gridC gridD";
+
+    .like {
+        border: #fff solid 3px;
+        border-radius: 4px;
+        /* margin-bottom: 12px; */
+        padding: 0 12px 12px 12px;
+
+        .like-contents {
+            display: grid;
+            grid-template-columns: 72px 72px;
+            grid-template-rows: 40px 40px 40px;
+            gap: 4px;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .like-content {
+                border-radius: 4px;
+                margin-bottom: 8px;
+
+                .text-decoration {
+                    position: relative;
+                    top: 2px;
+                    left: 1px;
+                    font-size: 1rem;
+                    -webkit-text-stroke: 0.3px #fff;
+                }
+
+                .user-content {
+                    /* background-color: rgba(223, 228, 237, 0.7); */
+                    background-color: #fff;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                }
+
+            }
+        }
+    }
+}
+
+.bestWrap {
+    padding: 0 12px 12px 12px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        gap: 12px;
+
+        li {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 251, 233, 0.7);
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+
+            .title {
+                margin-right: 12px;
+                margin-left: 5px;
+            }
+        }
+
+        .gold {
+            transform: rotate(0.98deg);
+            position: relative;
+
+            .title {}
+        }
+
+        .silver {
+            transform: rotate(-2.76deg);
+        }
+
+        .bronze {
+            transform: rotate(-4.92deg);
+        }
+    }
+}
+
+.loveWrap {
+    border: 2px solid #fff;
+    padding: 14px 8px 12px 4px;
+}
