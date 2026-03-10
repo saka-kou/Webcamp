@@ -64,6 +64,7 @@ body {
         width: 360px;
         height: 380px;
         background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
 
     }
 }
@@ -161,9 +162,9 @@ body {
         margin: 0 30px;
         overflow: scroll;
 
-
         img {
             width: calc(20% - 15px);
+            cursor: pointer;
         }
     }
 }
