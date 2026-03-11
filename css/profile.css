@@ -156,6 +156,11 @@ body {
             background: url(../images/like_bg.png) no-repeat center center/contain;
             padding: 20px 10px;
 
+            .text-decoration {
+                display: flex;
+                align-items: bottom;
+            }
+
             .like-content {
                 border-radius: 4px;
                 margin-bottom: 8px;
