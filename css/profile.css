@@ -7,9 +7,9 @@ body {
     font-family: "Hachi Maru Pop", cursive;
     font-weight: 400;
     font-style: normal;
-    background-image: url(../images/background_pure.webp);
-    background-size: auto;
-    background-position: center center;
+    background: url(../images/background_pure.webp) no-repeat center center/cover;
+    /* background-size: auto;
+    background-position: center center; */
     /* background-position-x: -65px; */
     margin: 0 12px;
     /* padding-left: 40px; */
@@ -139,9 +139,9 @@ body {
     grid-template-areas:
         "gridA gridB"
         "gridC gridD";
+    column-gap: 10px;
 
     .like {
-        border: #fff solid 3px;
         border-radius: 4px;
         /* margin-bottom: 12px; */
         padding: 0 12px 12px 12px;
@@ -153,6 +153,8 @@ body {
             gap: 4px;
             flex-direction: column;
             flex-wrap: wrap;
+            background: url(../images/like_bg.png) no-repeat center center/contain;
+            padding: 20px 10px;
 
             .like-content {
                 border-radius: 4px;
@@ -168,10 +170,11 @@ body {
 
                 .user-content {
                     /* background-color: rgba(223, 228, 237, 0.7); */
-                    background-color: #fff;
+                    background: #fff;
                     padding: 2px 4px;
                     border-radius: 4px;
                 }
+
 
             }
         }
@@ -179,7 +182,25 @@ body {
 }
 
 .bestWrap {
-    padding: 0 12px 12px 12px;
+    position: relative;
+
+    h3 {
+        position: relative;
+        z-index: 10;
+        opacity: 9;
+        padding: 10px 5px;
+        transform: rotate(-5.489deg);
+    }
+
+    .text-decoration {
+        position: absolute;
+    }
+
+    .shooting_star {
+        position: relative;
+        top: -38px;
+        left: 13px;
+    }
 
     ul {
         display: flex;
@@ -187,6 +208,7 @@ body {
         justify-content: center;
         text-decoration: none;
         gap: 12px;
+        margin-top: 44px;
 
         li {
             display: flex;
@@ -206,20 +228,135 @@ body {
             transform: rotate(0.98deg);
             position: relative;
 
-            .title {}
+            .title {
+                position: relative;
+                z-index: 10;
+                opacity: 9;
+            }
+
+            .goldmedal {
+                width: 24px;
+                height: 34.89px;
+                background: url(../images/gold.png) no-repeat center center/cover;
+                position: relative;
+                z-index: 1;
+                left: -25px;
+                bottom: -4px;
+            }
         }
 
         .silver {
             transform: rotate(-2.76deg);
+
+            .title {
+                position: relative;
+                z-index: 10;
+                opacity: 9;
+            }
+
+        }
+
+        .silvermedal {
+            width: 28px;
+            height: 34.89px;
+            background: url(../images/silver.png) no-repeat center center/cover;
+            position: relative;
+            left: -29px;
+            bottom: -4px;
+            z-index: 1;
         }
 
         .bronze {
             transform: rotate(-4.92deg);
+
+            .title {
+                position: relative;
+                z-index: 10;
+                opacity: 9;
+            }
+
+        }
+
+        .bronzemedal {
+            width: 28px;
+            height: 34.89px;
+            background: url(../images/bronze.png) no-repeat center center/cover;
+            position: relative;
+            left: -30px;
+            bottom: -4px;
+            z-index: 1;
         }
     }
 }
 
 .loveWrap {
-    border: 2px solid #fff;
     padding: 14px 8px 12px 4px;
+    position: relative;
+    bottom: 20px;
+
+    .text-decoration {
+        position: absolute;
+    }
+
+    h3 {
+        position: relative;
+        z-index: 10;
+        opacity: 9;
+    }
+
+    .heart {
+        position: relative;
+        left: -16px;
+        bottom: 51px;
+    }
+
+    .love_anser {
+        margin-top: 35px;
+        padding: 10px 2px 5px 2px;
+        background-color: rgb(247, 224, 234, .7);
+        fill: rgba(247, 224, 234, 0.70);
+        border-radius: 6px;
+    }
+
+    .loveWrap_content {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        list-style: none;
+        padding-bottom: 8px;
+    }
+
+    .container {
+        width: 24px;
+        height: 12px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.90);
+    }
+}
+
+.if_container {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    padding: 5px 9px 7px 9px;
+
+    .if_content {
+        padding-top: 4px;
+
+        .title {
+            font-size: 10px;
+        }
+    }
+
+    .container {
+        background-color: rgba(86, 149, 204);
+        text-align: center;
+        border-radius: 5px;
+
+    }
+}
+
+.left {
+    .text-decoration {
+        background-color: rgba(255, 255, 255, 0.50);
+    }
 }
