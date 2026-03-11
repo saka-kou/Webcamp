@@ -6,6 +6,7 @@ html {
 
 body {
     position: relative;
+    z-index: 1;
     background-color: var(--bg-color);
     font-family: "Hachi Maru Pop", cursive;
     font-weight: 400;
@@ -13,6 +14,7 @@ body {
     background-image: url(../images/bg-heart.png);
     background-position-y: 350px;
     background-position-x: -30px;
+    overflow: hidden;
 }
 
 #bg-heart {
@@ -25,7 +27,7 @@ body {
     margin-top: 48px;
     display: flex;
     align-items: center;
-    margin: 48px 32px 50px 16px;
+    margin: 32px 32px 40px 16px;
 
     #input-search {
         width: 225px;
@@ -62,21 +64,24 @@ body {
         width: 360px;
         height: 380px;
         background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
 
     }
 }
 
-.footer {
+.bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+    margin: 16px 0;
 
     #edit {
         width: 80px;
         height: 48px;
         font-size: 1.6rem;
         color: #fff;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         border: 1px solid #fff;
         border-radius: 4px;
         background-color: var(--accent-color);
@@ -122,4 +127,57 @@ body {
             transform: scale(-1, 1);
         }
     }
+}
+
+.footer-trigger {
+    position: relative;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
+
+    .footer-border {
+        position: absolute;
+        top: 8px;
+        left: 42.5%;
+        width: 15%;
+        height: 8px;
+        background-color: #d9d9d9;
+        border-radius: 4px;
+    }
+}
+
+.footer {
+    position: absolute;
+    background-color: #fff;
+
+    .footer-inner {
+        display: flex;
+        height: 370px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 30px;
+        overflow: scroll;
+
+        img {
+            width: calc(20% - 15px);
+            cursor: pointer;
+        }
+    }
+}
+
+.footerWrap {
+    position: relative;
+    height: 600px;
+    z-index: 10;
+    padding-top: 60px;
+    transform: translateY(-60px);
+    transition: 0.4s ease-in-out;
+}
+
+.footerWrap.translate {
+    transform: translateY(-420px);
 }
