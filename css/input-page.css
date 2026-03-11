@@ -7,9 +7,13 @@ body {
     font-family: "Hachi Maru Pop", cursive;
     font-weight: 400;
     font-style: normal;
+    /* background-position-y: 425px; */
+    /* background-position-x: -30px; */
     background-image: url(../images/bg-heart.png);
-    background-position-y: 425px;
-    background-position-x: -30px;
+    background-position: left bottom;
+    background-attachment: fixed;
+    /* bottom: 0;
+    left: 0; */
     margin: 0 30px;
 }
 
